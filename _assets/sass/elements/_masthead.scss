@@ -1,0 +1,61 @@
+header.masthead {
+
+  display: block;
+  float: left;
+  clear: left;
+  width: 100%;
+  height: pem(220);
+
+  a.site_title {
+    position: absolute;
+    top: pem(1);
+    width: pem(120);
+    height: pem(120);
+
+    span.bg,
+    span.logo {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: pem(120);
+      height: pem(120);
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    span.bg {
+      background-image: url('../images/ak_logo_bg.svg');
+      opacity: 1;
+      @include transition();
+
+      @include animate-linear-rotation(12s);
+    }
+    span.logo {
+      background-image: url('../images/ak_logo.svg');
+    }
+
+  }
+
+  a.site_title:hover {
+    span.bg {
+      opacity: 0;
+    }
+  }
+
+  nav.main_nav {
+    display: block;
+    float: left;
+    clear: both;
+    margin: pem(50) 0 0 pem(150);
+
+    text-transform: uppercase;
+    font-family: 'sans_light';
+    color: darken($color_purple, 10%);
+    font-size: 1.5em;
+  }
+
+}
+
+@-moz-keyframes rotation { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes rotation { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes rotation { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }

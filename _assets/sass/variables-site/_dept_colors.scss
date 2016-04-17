@@ -1,0 +1,75 @@
+
+/* Home Page subcategories ********************************** */
+/* Category Page subcategories ********************************** */
+.dept_391 nav.subcategories li h3,
+span.fw hgroup.catid_391 h1 { // Birdbaths & Fountains
+  background-color: $color_dept_birdbath;
+}
+
+.dept_392 nav.subcategories li h3,
+span.fw hgroup.catid_392 h1 { // Outdoor Decor
+  background-color: $color_dept_outdoor_decor;
+}
+
+.dept_393 nav.subcategories li h3,
+span.fw hgroup.catid_393 h1 { // Decorative Lighting
+  background-color: $color_dept_decorative_lighting;
+}
+
+.dept_394 nav.subcategories li h3,
+span.fw hgroup.catid_394 h1 { // Functional Lighting
+  background-color: $color_dept_functional_lighting;
+}
+
+.dept_395 nav.subcategories li h3,
+span.fw hgroup.catid_395 h1 { // Outdoor Accessories
+  background-color: $color_dept_outdoor_accessories;
+}
+
+
+/* Main Navigation colors ******************************* */
+/* euhhhh these got really hard to read... sorry. */
+nav.mn div.block li.top > a.navItem391.showing,
+body.dept_391 nav.mn div.block li.top > a.navItem391,
+.no-touch nav.mn div.block li.top > a.navItem391:hover {
+  border-color: $color_dept_birdbath;
+}
+nav.mn div.block li.top > a.navItem391.showing::after {
+  border-top-color: $color_dept_birdbath;
+}
+
+nav.mn div.block li.top > a.navItem392.showing,
+body.dept_392 nav.mn div.block li.top > a.navItem392,
+.no-touch nav.mn div.block li.top > a.navItem392:hover {
+  border-color: $color_dept_outdoor_decor;
+}
+nav.mn div.block li.top > a.navItem392.showing::after {
+  border-top-color: $color_dept_outdoor_decor;
+}
+
+nav.mn div.block li.top > a.navItem393.showing,
+body.dept_393 nav.mn div.block li.top > a.navItem393,
+.no-touch nav.mn div.block li.top > a.navItem393:hover {
+  border-color: $color_dept_decorative_lighting;
+}
+nav.mn div.block li.top > a.navItem393.showing::after {
+  border-top-color: $color_dept_decorative_lighting;
+}
+
+nav.mn div.block li.top > a.navItem394.showing,
+body.dept_394 nav.mn div.block li.top > a.navItem394,
+.no-touch nav.mn div.block li.top > a.navItem394:hover {
+  border-color: $color_dept_functional_lighting;
+}
+nav.mn div.block li.top > a.navItem394.showing::after {
+  border-top-color: $color_dept_functional_lighting;
+}
+
+nav.mn div.block li.top > a.navItem395.showing,
+body.dept_395 nav.mn div.block li.top > a.navItem395,
+.no-touch nav.mn div.block li.top > a.navItem395:hover {
+  border-color: $color_dept_outdoor_accessories;
+}
+nav.mn div.block li.top > a.navItem395.showing::after {
+  border-top-color: $color_dept_outdoor_accessories;
+}
