@@ -45,14 +45,16 @@ gulp.task('jekyll', function (gulpCallBack){
 });
 
 gulp.task('jekyllmini', ['jekyll'], function() {
-  return gulp.src(['./../_site/**/*.html', './../_site/index.php'])
+  // return gulp.src(['./../_site/**/*.html', './../_site/index.php'])
+  return gulp.src(['./../../alexkademan.github.io/**/*.html', './../_site/index.php'])
     .pipe(htmlmin({
       collapseWhitespace : true,
       removeComments : true,
       minifyJS : true,
       removeTagWhitespace : true
     }))
-    .pipe(gulp.dest('./../_site'))
+    // .pipe(gulp.dest('./../_site'))
+    .pipe(gulp.dest('./../../alexkademan.github.io'))
 });
 
 gulp.task('sass', function () {
