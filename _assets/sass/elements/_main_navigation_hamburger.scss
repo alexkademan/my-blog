@@ -1,10 +1,12 @@
 span.toggle_menu {
-  display: block;
-  float: left;
-  clear: none;
+  position: absolute;
+  // top: 0;
+  top: pem(8);
+  right: pem(4);
+  z-index: 10;
   width: $navbtn_height;
   height: $navbtn_height;
-  background-color: #FFF;
+  background-color: #F4F4F4;
   color: #FFF;
 
   .line {

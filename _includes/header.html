@@ -1,24 +1,18 @@
 <header id="site_header" class="site_header">
   <div class="outside">
-    <span class=stripe>
 
-      <span class="toggle_menu">
-        <div class="line line-1"></div>
-  			<div class="line line-2"></div>
-  			<div class="line line-3"></div>
-        <a class="toggle"></a>
-      </span>
+    <a class="site-title" href="{{ site.baseurl }}">logo</a>
 
-      <a class="site-title" href="{{ site.baseurl }}">logo</a>
-      <!-- <a class="site_title" href="{{ site.url }}/">
-        <span class="bg"></span>
-        <span class="logo"></span>
-      </a> -->
-
+    <span class="toggle_menu">
+      <div class="line line-1"></div>
+			<div class="line line-2"></div>
+			<div class="line line-3"></div>
+      <a class="toggle"></a>
     </span>
 
     <nav id="site-nav" class="site-nav">
       <ul id="mainNav" class="mainNav">
+      <li><a class="title-link" href="{{ site.baseurl }}">{{ site.title }}</a></li>
       {% for my_page in site.pages %}
         {% if my_page.title %}
         {% capture pageURL %}{{ site.url }}{{ my_page.url }}{% endcapture %}

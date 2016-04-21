@@ -1,8 +1,10 @@
+html {
+  width: 100%;
+  overflow: hidden;
+}
 header.site_header {
   height: $navbtn_height;
-  position: fixed;
   width: 100%;
-  // background-color: #F4F4F4;
   z-index: 1000; // always on top !!!
 
   ul,
@@ -30,16 +32,6 @@ header.site_header {
   }
 }
 
-span.stripe { // this is for the menu to hide behind.
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: $navbtn_height;
-  background-color: #F4F4F4;
-  z-index: 1000;
-}
-
 .page {
   padding-top: $navbtn_height;
 }
@@ -48,23 +40,26 @@ div.outside {
 }
 // mobile menu OFF:
 nav.site-nav {
-
   position: absolute;
-  left: 0;
-  top: $navbtn_height;
+
+  right: 0;
+  // top: $navbtn_height;
+  top: 0;
   width: 100%;
-  overflow: hidden;
-  z-index: 1500;
-  background: #FFF;
-  border-bottom: 1px #000 solid;
+  height: 0;
+  z-index: 6;
 
   @include transition(height 0.4s ease-in-out);
 
-  ul {
+  & > ul {
+    width: $main_nav_width;
     position: absolute;
-    left: 0;
-    bottom: 0;
+    left: 100%;
+
+    background: #FFF;
     width: 100%;
+    // padding-top: $navbtn_height;
+    @include transition(left 0.25s ease-in-out);
 
     li,
     li a {
@@ -76,19 +71,29 @@ nav.site-nav {
     li a {
       padding: $main_gutter;
     }
+    li a.title-link {
+      // background: #FCF;
+      padding-top: 0;
+      padding-bottom: 0;
+      line-height: $navbtn_height;
+    }
   }
 }
 
 // mobile menu ON:
 html.main_nav_on nav.site-nav {
-  @include transition(height 0.25s ease-in-out);
+  & > ul {
+    left: $main_nav_margin;
+    @include transition(left 0.25s ease-in-out);
+  }
+  // @include transition(height 0.25s ease-in-out);
 }
 
 span.mobile_shader {
   position: fixed;
   left: 0;
   top: 0;
-  z-index: 1; // one below span.shade
+  z-index: 1;
   width: 100%;
   background-color: transparent;
   @include transition(background-color 0.4s ease-in-out);

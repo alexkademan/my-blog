@@ -8,11 +8,11 @@ module.exports = Backbone.View.extend({
   el: '#site-nav',
 
   openUp: function() {
-    this.$el.attr('style', 'height: ' + this.$('ul').height() + 'px');
+    // this.$el.attr('style', 'height: ' + this.$('ul').height() + 'px');
   },
 
   closeDown: function() {
-    this.$el.attr('style', 'height: 0px');
+    // this.$el.attr('style', 'height: 0px');
   },
 
   switchToLarger: function() {
