@@ -6,4 +6,5 @@
   @import 'main-navigation-medium';
 }
 @include media($large) {
+  @import 'main-navigation-large';
 }

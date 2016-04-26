@@ -19,8 +19,6 @@ nav.site-nav > ul {
   left: 100%;
   top: pem(15);
   padding: 0;
-  // background: darken($color-red, 20%);
-  // @include transition(left 0.25s ease-in-out);
 
   li,
   li a {
@@ -33,7 +31,6 @@ nav.site-nav > ul {
     color: $color_green;
   }
   li a {
-    width: 100%;
     line-height: 1em;
     padding:  ($main_gutter * 0.333) ($main_gutter * 0.33333) ($main_gutter * 0.25);
   }
@@ -44,7 +41,6 @@ nav.site-nav > ul {
 html.main_nav_on nav.site-nav {
   & > ul {
     left: $main_nav_margin;
-    // @include transition(left 0.25s ease-in-out);
   }
 }
 

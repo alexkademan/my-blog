@@ -1,0 +1,25 @@
+header.site-header {
+  div.outside {
+    @include outer-container;
+  }
+
+  a.site-title {
+    position: relative;
+    display: block;
+    float: left;
+    clear: none;
+
+    top: auto;
+    left: auto;
+
+    width: pem(120);
+    height: pem(120);
+
+    margin-top: pem(3);
+    margin-left: pem(5);
+  }
+
+  span.toggle-menu {
+    display: none;
+  }
+}
