@@ -1,0 +1,7 @@
+@import 'masthead-universal';
+
+@include media($medium) {
+  @import 'masthead-medium';
+}
+@include media($large) {
+}

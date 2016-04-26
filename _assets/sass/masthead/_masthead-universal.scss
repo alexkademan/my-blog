@@ -1,0 +1,59 @@
+
+
+header.site-header {
+  display: block;
+  float: left;
+  clear: left;
+  width: 100%;
+  padding-bottom: ($main_gutter * 0.5);
+
+  a.site-title {
+
+    position: absolute;
+    width: pem(75);
+    height: pem(75);
+    top: pem(3);
+    left: pem(15);
+
+    span.bg,
+    span.logo {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    span.bg {
+      background-image: url('../images/ak_logo_bg.svg');
+      opacity: 1;
+      @include transition();
+
+      @include animate-linear-rotation(12s);
+    }
+    span.logo {
+      background-image: url('../images/ak_logo.png');
+    }
+
+  }
+
+  a.site-title:hover {
+    span.bg {
+      opacity: 0;
+    }
+  }
+
+  nav.site-nav {
+    text-transform: uppercase;
+    font-family: 'sans_light';
+    color: darken($color_purple, 10%);
+    font-size: 1.5em;
+  }
+
+}
+
+@-moz-keyframes rotation { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes rotation { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes rotation { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }

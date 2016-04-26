@@ -1,0 +1,88 @@
+span.toggle-menu {
+  display: block;
+  float: right;
+  clear: none;
+  position: relative;
+  z-index: 10;
+  width: $navbtn_height;
+  height: $navbtn_height;
+  background-color: transparent;
+  color: #FFF;
+
+  &::before {
+    position: absolute;
+    top: pem(0);
+    left: 0;
+    content: "";
+    width: pem(30);
+    height: pem(30);
+    margin-left: pem(15);
+    margin-top: pem(16);
+    background-color: transparent;
+    @include rounded(50%);
+    @include transition(all 0.4s ease-in-out);
+  }
+
+  .line {
+  	position: relative;
+  	background: $color-orange;
+  	height: 3px;
+  	width: 32px;
+  	border-radius: 3px;
+  	margin: 6px 14px;
+    @include transition(all 0.4s ease-in-out);
+  }
+  .line-1 {
+    margin-top: 20px;
+  }
+  a.toggle {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: $navbtn_height;
+    height: $navbtn_height;
+    background-color: transparent;
+    cursor: pointer;
+  }
+}
+
+html.main_nav_on span.toggle-menu { // when the menu is showing:
+  &::before {
+    width: pem(50);
+    height: pem(50);
+    margin-left: pem(4);
+    margin-top: pem(6);
+    background-color: $color-orange;
+    @include transition(all 0.4s ease-in-out);
+  }
+
+  .line-1,
+  .line-2,
+  .line-3 {
+  	position: relative;
+    left: 0;
+  	background: #FFF;
+    @include transition(all 0.4s ease-in-out);
+
+  }
+  .line-2 {
+  	background: transparent;
+  }
+
+  .line-1, .line-3 {
+    width: 29px;
+
+  }
+
+  .line-1 {
+  	margin: 21px 0 0 16.5px;
+    @include transform-origin( 10% 100% );
+    @include transform(rotateZ(45deg));
+  }
+
+  .line-3 {
+    margin: -1.5px 0 0 19px;
+    @include transform-origin( 10% 100% );
+    @include transform(rotateZ(-45deg));
+  }
+}

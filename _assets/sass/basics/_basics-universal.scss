@@ -1,0 +1,45 @@
+body {
+  background-color: lighten($color_tan, 5%);
+  background-image: url(../images/static_blue_top.png);
+  background-repeat: repeat-x;
+  background-position: 0 top;
+}
+body::before {
+  content: '';
+  display: block;
+  float: left;
+  clear: both;
+  width: 100%;
+  height: pem(7);
+  background: $color-orange; /* For browsers that do not support gradients */
+  @include linear-gradient(to left, $color-orange, lighten($color-pink, 0%));
+}
+.outer {
+  @include outer-container;
+}
+div.layout > .page,
+// .row,
+footer.site-footer {
+  display: block;
+  float: left;
+  clear: both;
+  width: 100%;
+}
+
+div.layout > .page {
+  // background: #FFF;
+}
+div.main-content { // from default.html
+  padding: $gutter ($main_gutter * 0.9);
+  @include span-columns(12);
+}
+
+.hid {
+  @include hidden;
+}
+
+footer.site-footer {
+  .outer {
+    padding: $gutter $main_gutter ($gutter * 2);
+  }
+}
