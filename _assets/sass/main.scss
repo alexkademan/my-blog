@@ -20,6 +20,8 @@
 ;
 
 
-
-@import 'elements/elements';
-@import 'wireframe/wireframe';
+@import
+  "basics/basics",
+  "masthead/masthead",
+  "main-navigation/main-navigation"
+;

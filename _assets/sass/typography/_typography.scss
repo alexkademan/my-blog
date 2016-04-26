@@ -1,3 +1,6 @@
+@include font-face( 'sans_light', 'fonts/antonio-light-webfont' );
+// @include font-face( 'sans_regular', 'fonts/librebaskerville-regular-webfont' );
+@include font-face( 'not_sans_italic', 'fonts/librebaskerville-italic-webfont' );
 
 @import "copy";
 @import "headings";

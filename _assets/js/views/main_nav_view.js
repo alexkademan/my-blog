@@ -9,7 +9,7 @@ var MainMenuHeight = require('./main_nav_heigt_view');
 
 module.exports = Backbone.View.extend({
 
-  el: '#site_header',
+  el: '#site-header',
 
   events: {
     'click a.toggle': 'toggleMenu'
