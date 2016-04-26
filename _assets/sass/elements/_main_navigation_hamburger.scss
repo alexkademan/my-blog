@@ -1,17 +1,33 @@
 span.toggle_menu {
   position: absolute;
   // top: 0;
-  top: pem(8);
-  right: pem(4);
+  top: pem(0);
+  right: pem(0);
   z-index: 10;
   width: $navbtn_height;
   height: $navbtn_height;
-  background-color: #F4F4F4;
+  background-color: transparent;
   color: #FFF;
+
+  &::before {
+    position: absolute;
+
+    top: pem(0);
+    left: 0;
+
+    content: "";
+    width: pem(30);
+    height: pem(30);
+    margin-left: pem(15);
+    margin-top: pem(16);
+    background-color: transparent;
+    @include rounded(50%);
+    @include transition(all 0.4s ease-in-out);
+  }
 
   .line {
   	position: relative;
-  	background: #000;
+  	background: $color-orange;
   	height: 3px;
   	width: 32px;
   	border-radius: 3px;
@@ -33,12 +49,21 @@ span.toggle_menu {
 }
 
 html.main_nav_on span.toggle_menu { // when the menu is showing:
+  &::before {
+    width: pem(50);
+    height: pem(50);
+    margin-left: pem(4);
+    margin-top: pem(6);
+    background-color: $color-orange;
+    @include transition(all 0.4s ease-in-out);
+  }
 
   .line-1,
   .line-2,
   .line-3 {
   	position: relative;
     left: 0;
+  	background: #FFF;
     @include transition(all 0.4s ease-in-out);
 
   }

@@ -27,7 +27,6 @@ header.masthead {
       background-image: url('../images/ak_logo_bg.svg');
       opacity: 1;
       @include transition();
-
       @include animate-linear-rotation(12s);
     }
     span.logo {
@@ -42,20 +41,45 @@ header.masthead {
     }
   }
 
-  nav.main_nav {
-    display: block;
-    float: left;
-    clear: both;
-    margin: pem(50) 0 0 pem(150);
-
-    text-transform: uppercase;
-    font-family: 'sans_light';
-    color: darken($color_purple, 10%);
-    font-size: 1.5em;
-  }
-
 }
 
 @-moz-keyframes rotation { 100% { -moz-transform: rotate(360deg); } }
 @-webkit-keyframes rotation { 100% { -webkit-transform: rotate(360deg); } }
 @keyframes rotation { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+
+
+
+header.site_header {
+  height: $navbtn_height;
+  width: 100%;
+  z-index: 1000; // always on top !!!
+
+  ul,
+  li {
+    display: block;
+    float: left;
+    clear: left;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  a.site-title {
+
+    display: inline-block;
+    text-align: center;
+    vertical-align: bottom;
+
+    float: left;
+    clear: none;
+
+    width: $main_logo_width;
+    height: $navbtn_height;
+
+  }
+}
+
+.page {
+  padding-top: $navbtn_height;
+}

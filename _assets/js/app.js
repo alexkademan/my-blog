@@ -1,6 +1,4 @@
 
-
-var BackgroundModel = require('./models/backgroundModel');
 var Background = require('./views/background'); // primary instructions for page navigation
 
 var WindowStatsModel = require('./models/window_stats_model');
@@ -22,8 +20,7 @@ module.exports = {
     // wait for document ready to render our main view
     // this ensures the document has a body, etc.
     domReady(function () {
-      app.backgroundModel = new BackgroundModel();
-      app.background = new Background({ model: app.backgroundModel });
+      app.background = new Background();
 
       app.windowStatus = new WindowStatsModel();
       app.windowStatusView = new WindowStatsView({ model : app.windowStatus });
