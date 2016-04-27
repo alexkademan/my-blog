@@ -20,15 +20,17 @@ nav.site-nav > ul {
   display: block;
   float: left;
   clear: none;
+  padding-right: 0.25em;
 
   li,
   li a {
     clear: none;
     width: auto;
+    color: darken($color-green, 15%);
   }
   li a {
     font-size: 1em;
-    padding: ($main_gutter * 1) 0.5em;
+    padding: ($main_gutter * 1) 0.25em;
     // background: rgba(255,255,255, 0.2);
     @include transition(color 0.25s ease-in-out);
     .no-touchevents &:hover {

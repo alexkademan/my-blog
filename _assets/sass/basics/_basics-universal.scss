@@ -26,9 +26,6 @@ footer.site-footer {
   width: 100%;
 }
 
-div.layout > .page {
-  // background: #FFF;
-}
 div.main-content { // from default.html
   padding: $gutter ($main_gutter * 0.9);
   @include span-columns(12);
