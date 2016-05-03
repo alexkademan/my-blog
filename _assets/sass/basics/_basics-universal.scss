@@ -1,8 +1,5 @@
 body {
-  background-color: lighten($color_tan, 5%);
-  background-image: url(../images/static_blue_top.png);
-  background-repeat: repeat-x;
-  background-position: 0 top;
+  background-color: $color-page-bg;
 }
 body::before {
   content: '';
@@ -14,11 +11,22 @@ body::before {
   background: $color-orange; /* For browsers that do not support gradients */
   @include linear-gradient(to left, $color-orange, lighten($color-pink, 0%));
 }
+
+header.site-header,
+div.layout > .page {
+  background: $color-page-bg;
+}
+header.site-header {
+  background-color: $color-page-bg;
+  background-image: url(../images/static_blue_top.png);
+  background-repeat: repeat-x;
+  background-position: 0 top;
+}
+
 .outer {
   @include outer-container;
 }
 div.layout > .page,
-// .row,
 footer.site-footer {
   display: block;
   float: left;
@@ -27,16 +35,45 @@ footer.site-footer {
 }
 
 div.main-content { // from default.html
-  padding: $gutter ($main_gutter * 0.9);
+  padding: $gutter ($main_gutter * 0.9) ($gutter * 1.5);
   @include span-columns(12);
 }
 
 .hid {
   @include hidden;
 }
-
+.icon > svg {
+  display: inline-block;
+  vertical-align: middle;
+  width: 1em;
+  height: 1em;
+}
 footer.site-footer {
-  .outer {
-    padding: $gutter $main_gutter ($gutter * 2);
+  padding: $gutter $main_gutter ($gutter * 2);
+  border-top: pem(2) $color-orange solid;
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .icon > svg {
+    width: 1.3em;
+    height: 1.3em
+  }
+
+}
+footer.site-footer .left {
+  @include span-columns(6);
+}
+
+footer.site-footer .right,
+footer.site-footer .right span.footer-icon {
+  display: block;
+  float: right;
+  clear: none;
+  span.footer-icon {
+    float: right;
+    clear: right;
+    padding-bottom: pem(5);
   }
 }
