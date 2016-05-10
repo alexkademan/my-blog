@@ -9,13 +9,13 @@ module.exports = Backbone.View.extend({
 
   events: {
     'click': function(e) {
-      app.mainNav.closeMenus();
+      app.mainNav.openClose();
     }
   },
 
-  clickScreen: function(e) {
-    console.log(e.target.className);
-  },
+  // clickScreen: function(e) {
+  //   console.log(e.target.className);
+  // },
 
   openShader: function() {
     this.$el.attr('style', 'height: ' + app.windowStatus.get('documentHeight') + 'px');

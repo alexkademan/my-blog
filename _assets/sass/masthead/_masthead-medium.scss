@@ -15,8 +15,8 @@ header.site-header {
     width: pem(120);
     height: pem(120);
 
-    margin-top: pem(3);
-    margin-left: pem(8);
+    margin-top: -0.4em;
+    margin-left: $main_gutter;
   }
 
   span.toggle-menu {

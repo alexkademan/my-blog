@@ -1,23 +1,24 @@
 body {
   background-color: $color-page-bg;
+  // @include linear-gradient(to top, #FFF, lighten($color-tan, 3%));
 }
-body::before {
+div.layout > span.stripe {
   content: '';
   display: block;
   float: left;
   clear: both;
   width: 100%;
   height: pem(7);
-  background: $color-orange; /* For browsers that do not support gradients */
+  background-color: $color-orange; /* For browsers that do not support gradients */
   @include linear-gradient(to left, $color-orange, lighten($color-pink, 0%));
 }
 
 header.site-header,
 div.layout > .page {
-  background: $color-page-bg;
+  background: transparent;
 }
 header.site-header {
-  background-color: $color-page-bg;
+  background-color: transparent;
   background-image: url(../images/static_blue_top.png);
   background-repeat: repeat-x;
   background-position: 0 top;
