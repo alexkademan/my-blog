@@ -13,10 +13,6 @@ module.exports = Backbone.View.extend({
     }
   },
 
-  // clickScreen: function(e) {
-  //   console.log(e.target.className);
-  // },
-
   openShader: function() {
     this.$el.attr('style', 'height: ' + app.windowStatus.get('documentHeight') + 'px');
   },

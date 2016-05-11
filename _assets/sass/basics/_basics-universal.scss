@@ -2,6 +2,11 @@ body {
   background-color: $color-page-bg;
   // @include linear-gradient(to top, #FFF, lighten($color-tan, 3%));
 }
+figure.highlight {
+  // background: #FCF;
+  margin: 0;
+  padding: pem(4) pem(12);
+}
 div.layout > span.stripe {
   content: '';
   display: block;
