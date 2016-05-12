@@ -4,12 +4,15 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+This is my about page. here I will explain what I know how to do.
 
-You can find the source code for the Jekyll new theme at:
-{% include icon-github.html username="jglovier" %} /
-[jekyll-new](https://github.com/jglovier/jekyll-new)
+<span class="scale"> Javascript</span>
+<span class="scale"> PHP
 
-You can find the source code for Jekyll at
-{% include icon-github.html username="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
+<!-- percent classes are set up in 5% increments -->
+<ul class="skills">
+  <li class="percent_60">javascript
+  <li class="percent_70">PHP
+  <li class="percent_95">HTML
+  <li class="percent_95">CSS
+  <li class="percent_85">SCSS</li>

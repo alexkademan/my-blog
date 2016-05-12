@@ -1,0 +1,6 @@
+
+@for $i from 5 through 20 {
+  ul.skills li.percent_#{$i * 5} {
+    width: 5% * $i;
+  }
+}
