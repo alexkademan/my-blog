@@ -73,7 +73,7 @@ module.exports = Backbone.View.extend({
 
     if( app.windowStatus.get('palmSize') === true ){
       // Make the Palm Sized Layout
-      console.log('make palm size');
+      // console.log('make palm size');
       app.mainMenuHeight.closeDown();
 
     } else {

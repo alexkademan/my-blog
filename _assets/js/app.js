@@ -16,8 +16,6 @@ module.exports = {
   blastoff: function () {
     var self = window.app = this;
 
-
-
     // wait for document ready to render our main view
     // this ensures the document has a body, etc.
     domReady(function () {

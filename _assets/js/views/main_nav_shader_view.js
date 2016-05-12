@@ -8,8 +8,8 @@ module.exports = Backbone.View.extend({
   el: '#mobile_shader',
 
   events: {
-    'click': function(e) {
-      app.mainNav.openClose();
+    'click': function() {
+      app.mainNavModel.set({'mobileMenu' : false });
     }
   },
 
