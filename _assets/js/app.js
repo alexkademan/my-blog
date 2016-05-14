@@ -7,6 +7,7 @@ var WindowStatsView = require('./views/window_stats_view');
 var MainNavModel = require('./models/main_nav_model');
 var MainNavView = require('./views/main_nav_view');
 
+var AboutPageStats = require('./views/about_stats_view');
 var Copyright = require('./views/copyright_view');
 
 var domReady = require('domready');
@@ -19,9 +20,12 @@ module.exports = {
     // wait for document ready to render our main view
     // this ensures the document has a body, etc.
     domReady(function () {
+
       // app.backgroundStatic = new Background();
+      app.aboutPageStats = new AboutPageStats();
       app.copyright = new Copyright();
 
+      // background stuff:
       app.windowStatus = new WindowStatsModel();
       app.windowStatusView = new WindowStatsView({ model : app.windowStatus });
 

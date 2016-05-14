@@ -1,17 +1,8 @@
-$skill-height: pem(20);
+// $skill-height: pem(20);
 
 ul.skills {
   padding-bottom: 2em;
   @include span-columns(12 of 12);
-}
-
-ul.skills li {
-  position: relative;
-  display: block;
-  width: 100%;
-  float: left;
-  clear: left;
-  padding: 0 0 0.3em;
 }
 
 // @for $i from 5 through 20 {
@@ -20,26 +11,22 @@ ul.skills li {
 //   }
 // }
 
-
-
-ul.skills li em,
-ul.skills li em::before {
+ul.skills li {
+  position: relative;
   display: block;
-  float: left;
-  clear: both;
-  text-align: right;
   width: 100%;
-  height: $skill-height;
+  float: left;
+  clear: left;
+  padding: pem(20) 0 0.3em;
 }
 ul.skills li em {
-  color: $color-page-bg;
-  color: #FCF;
-  width: 100%
-}
-ul.skills li em::before {
-  float: left;
-  background-color: $color-purple;
-  background-image: url(../images/skills.png);
-  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
   width: 100%;
+  height: pem(20);
+  background-color: $color-purple;
+  color: $color-page-bg;
+  color: transparent;
+  background-image: url(../images/skills.png);
 }
