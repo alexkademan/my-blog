@@ -3,16 +3,29 @@ layout: page
 title: About
 permalink: /about/
 ---
+{::options auto_ids="false" /}
 
 This is my about page. here I will explain what I know how to do.
 
-<span class="scale"> Javascript</span>
-<span class="scale"> PHP
+<!-- <div class="stats">
+  <h5>Web Dev Experience:</h5>
+  <ul class="skills">
+    <li class="percent_95">CSS / SCSS</li>
+    <li class="percent_95">HTML</li>
+    <li class="percent_75">PHP</li>
+    <li class="percent_65">javascript</li>
+  </ul>
+</div> -->
 
-<!-- percent classes are set up in 5% increments -->
-<ul class="skills">
-  <li class="percent_60">javascript
-  <li class="percent_70">PHP
-  <li class="percent_95">HTML
-  <li class="percent_95">CSS
-  <li class="percent_85">SCSS</li>
+* ## Web Dev Experience:
+* *95* CSS / SCSS
+* *95* HTML
+* *85* PHP
+* *65* Javascript
+{: .skills}
+
+* ## Graphics Skills:
+* *95* InDesign
+* *95* Illustrator
+* *85* Photoshop
+{: .skills}

@@ -2,6 +2,6 @@
 div.main-content, // from default.html
 footer.site-footer {
   // padding: $gutter 0;
-  @include span-columns(7.5);
-  @include shift(2.25);
+  @include span-columns(7);
+  @include shift(2.5);
 }

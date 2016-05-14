@@ -1,2 +1,8 @@
 
 @import 'pages-universal';
+@include media($medium) {
+  @import 'pages-medium';
+}
+@include media($large) {
+  // @import 'pages-large';
+}

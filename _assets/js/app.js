@@ -19,7 +19,7 @@ module.exports = {
     // wait for document ready to render our main view
     // this ensures the document has a body, etc.
     domReady(function () {
-      app.backgroundStatic = new Background();
+      // app.backgroundStatic = new Background();
       app.copyright = new Copyright();
 
       app.windowStatus = new WindowStatsModel();

@@ -1,13 +1,12 @@
 
-// from solful
-$max-width: pem(1240);
 $small_size: pem(720);
-$large_size: pem(1140);
+$large_size: pem(1000);
+$max-width: pem(1100);
 
 $palm_size: new-breakpoint(max-width $small_size 12);
 $medium: new-breakpoint(min-width $small_size 12);
 $large: new-breakpoint(min-width $large_size 12);
-$col_reading_width: pem(580);
+$col_reading_width: pem(540);
 
 $hr: 1px #CCC dotted;
 $hr_darker: 1px #000 solid;
