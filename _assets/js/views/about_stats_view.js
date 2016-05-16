@@ -35,12 +35,11 @@ module.exports = Backbone.View.extend({
   },
 
   renderLI: function(object) {
-
     var view = new LIview({ model: object });
+    var target = $('#' + view.model.get('list')); // this is a little sloppy, (can't cache this way)
+    target.append(view.render().el); // does the actual rendering
 
-    $('#' + view.model.get('list')).append(view.render());
-
-    view.changeWidth();
+    // view.changeWidth();
 
   },
 
