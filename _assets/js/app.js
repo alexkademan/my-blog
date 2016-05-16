@@ -14,6 +14,9 @@ var domReady = require('domready');
 
 module.exports = {
   // this is the the whole app initter
+
+
+
   blastoff: function () {
     var self = window.app = this;
 
@@ -21,7 +24,7 @@ module.exports = {
     // this ensures the document has a body, etc.
     domReady(function () {
 
-      // app.backgroundStatic = new Background();
+      app.backgroundStatic = new Background();
       app.aboutPageStats = new AboutPageStats();
       app.copyright = new Copyright();
 

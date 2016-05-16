@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: about-page
 title: About
 permalink: /about/
 ---
@@ -12,10 +12,12 @@ This is my about page. here I will explain what I know how to do.
 * *95* HTML
 * *85* PHP
 * *65* Javascript
-{: .skills}
+{: #webSkills .skills .web}
 
-* ## Graphics Skills:
+* ## Graphics Know-how:
 * *95* InDesign
 * *95* Illustrator
 * *85* Photoshop
-{: .skills}
+{: #graphicSkills .skills .graphics}
+
+<!-- \* at gun point. -->

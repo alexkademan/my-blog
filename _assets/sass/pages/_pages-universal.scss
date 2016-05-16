@@ -23,10 +23,20 @@ ul.skills li em {
   position: absolute;
   left: 0;
   top: 0;
-  width: 100%;
+  width: 0;
   height: pem(20);
   background-color: $color-purple;
   color: $color-page-bg;
   color: transparent;
   background-image: url(../images/skills.png);
+}
+
+ul.skills li i {
+  display: block;
+  float: right;
+  clear: none;
+  color: transparent;
+}
+ul.skills li:hover i {
+  color: $color-purple;
 }

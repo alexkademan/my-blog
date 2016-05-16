@@ -11,4 +11,7 @@ ul.skills li::after {
 
 ul.skills {
   @include span-columns(2 of 4);
+
+  @include shift(0);
+  // @include omega(2n);
 }
