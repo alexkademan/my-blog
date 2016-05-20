@@ -1,5 +1,7 @@
 
 @import 'pages-universal';
+@import 'pages-about';
+
 @include media($medium) {
   @import 'pages-medium';
 }

@@ -25,7 +25,6 @@ module.exports = {
     domReady(function () {
 
       // app.backgroundStatic = new Background();
-      app.aboutPageStats = new AboutPageStats();
       app.copyright = new Copyright();
 
       // background stuff:
@@ -34,6 +33,8 @@ module.exports = {
 
       app.mainNavModel = new MainNavModel();
       app.mainNav = new MainNavView({ model: app.mainNavModel });
+
+      app.aboutPageStats = new AboutPageStats();
 
     });
 

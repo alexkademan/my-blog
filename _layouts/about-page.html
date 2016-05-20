@@ -13,7 +13,7 @@ layout: default
 </article>
 <script type="text/template" id="item-template">
   <%= heading ? '<h2>' + heading + '</h2>' : '' %>
-  <%= percentage ? '<em style="width:' + percentage + '%">' + percentage + '</em>' : '' %>
+  <%= percentage ? '<em></em>' : '' %>
   <%= skillName ? skillName : '' %>
-  <%= percentage ? '<i>' + percentage + '</i>' : '' %>
+  <%= percentage ? '<i>' + (percentage / 10) + '/10</i>' : '' %>
 </script>

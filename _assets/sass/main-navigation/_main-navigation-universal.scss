@@ -39,7 +39,7 @@ nav.site-nav > ul {
 // mobile menu ON:
 html.main_nav_on nav.site-nav {
   & > ul {
-    left: $main_nav_margin;
+    left: $main_nav_margin * 0.25;
   }
 }
 

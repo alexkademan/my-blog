@@ -39,7 +39,11 @@ module.exports = Backbone.View.extend({
     var target = $('#' + view.model.get('list')); // this is a little sloppy, (can't cache this way)
     target.append(view.render().el); // does the actual rendering
 
-    // view.changeWidth();
+    view.changeWidth();
+
+    // console.log( app.windowStatus );
+    // console.log( app.windowStatusView );
+    // console.log( app );
 
   },
 

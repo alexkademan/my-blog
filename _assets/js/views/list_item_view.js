@@ -5,17 +5,31 @@ var $ = require ('jquery');
 
 module.exports = Backbone.View.extend({
   tagName: 'li',
-  template: _.template($('#item-template').html()),
 
   render: function() {
-    this.$el.html(this.template(this.model.toJSON()));
+
+    var template = _.template($('#item-template').html());
+    this.$el.html( template(this.model.toJSON()) );
+
+    this.zeroOutWidth();
+
     return this;
   },
 
   changeWidth: function() {
+
+    var theEm = this.$('em'),
+        widthPercentage = this.model.get('percentage');
+    setTimeout(function(){
+      theEm.attr( "style", "width: " + widthPercentage + "%" );
+
+    }, 10); // this needs to be timed ... zero isn't showing any CSS transition.
+  },
+
+  zeroOutWidth: function() {
     var theEm = this.$('em');
-    console.log( theEm );
-    // theEm.attr( "style", "width: 50%" );
+
+    theEm.attr( "style", "width: 0%" );
   }
 
 });
