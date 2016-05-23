@@ -9,7 +9,7 @@ ul.skills li {
   width: 100%;
   float: left;
   clear: left;
-  padding: pem(20) 0 0.3em;
+  padding: pem(22) 0 0.3em;
 }
 ul.skills li em {
   position: absolute;
@@ -21,7 +21,7 @@ ul.skills li em {
   color: $color-page-bg;
   color: transparent;
   background-image: url(../images/skills.png);
-  @include  transition(width 0.75s linear);
+  @include  transition(width 0.33s ease-out);
 }
 ul.skills li i {
   display: block;
@@ -29,9 +29,9 @@ ul.skills li i {
   clear: none;
   color: transparent;
   padding-right:0.25em;
-  // @include  transition(all 0.125s ease-in-out);
+  @include  transition(all 0.125s ease-in-out);
 }
 .no-touchevents ul.skills li:hover i {
   color: $color-purple;
-  // @include  transition(all 0.25s ease-in-out);
+  @include  transition(all 0.25s ease-in-out);
 }

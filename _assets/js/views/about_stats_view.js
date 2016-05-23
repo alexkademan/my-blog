@@ -41,10 +41,6 @@ module.exports = Backbone.View.extend({
 
     view.changeWidth();
 
-    // console.log( app.windowStatus );
-    // console.log( app.windowStatusView );
-    // console.log( app );
-
   },
 
   /* this function will fish thru the DOM nodes within a UL from the about page and set them up in the correct model */
@@ -64,7 +60,8 @@ module.exports = Backbone.View.extend({
       } else if( thisItem.firstChild.localName === 'em' ) {
         thisObject = {
           percentage: thisItem.firstChild.innerText, // whats within the <em>
-          skillName: thisItem.innerText.replace(thisItem.firstChild.innerText + ' ', ''),
+          // skillName: thisItem.innerText.replace(thisItem.firstChild.innerText + ' ', ''),
+          skillName: thisItem.innerText.substring(3),
           list: thisList.id
         }
       };
