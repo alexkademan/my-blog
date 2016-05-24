@@ -8,16 +8,16 @@ permalink: /about/
 This is my about page. here I will explain what I know how to do.
 
 * ## Web Dev Experience:
-* *95* CSS / SCSS
-* *95* HTML
-* *80* PHP
-* *70* Javascript
+* CSS / SCSS *95*
+* HTML *95*
+* PHP *80*
+* Javascript *70*
 {: #webSkills .skills .web}
 
 * ## Graphics Know-how:
-* *95* InDesign
-* *95* Illustrator
-* *80* Photoshop
+* InDesign *95*
+* Illustrator *95*
+* Photoshop *80*
 {: #graphicSkills .skills .graphics}
 
 <!-- \* at gun point. -->

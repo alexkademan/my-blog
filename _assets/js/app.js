@@ -24,7 +24,7 @@ module.exports = {
     // this ensures the document has a body, etc.
     domReady(function () {
 
-      // app.backgroundStatic = new Background();
+      app.backgroundStatic = new Background();
       app.copyright = new Copyright();
 
       // background stuff:

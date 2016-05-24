@@ -39,7 +39,31 @@ module.exports = Backbone.View.extend({
     var target = $('#' + view.model.get('list')); // this is a little sloppy, (can't cache this way)
     target.append(view.render().el); // does the actual rendering
 
-    view.changeWidth();
+    view.model.on('change:showing', function(){
+      view.changeWidth();
+    });
+
+    if( view.model.get('skillName') !== '' ){
+      this.showViewAnimation(view); // run once to see if the thing is already visible
+
+      app.windowStatus.on('change:vScrollPosition', function(){
+        app.aboutPageStats.showViewAnimation(view); // run when page gets scrolled
+      });
+    };
+
+  },
+
+  showViewAnimation: function(view) {
+    // this method just checks to see if the view is on screen, or not yet scrolled down to.
+    var liBaseLine = view.$el[0].offsetTop + view.$el[0].clientHeight;
+    var bottomOfWindow = app.windowStatus.get('vScrollPosition') + app.windowStatus.get('windowHieght');
+
+    if(
+      app.windowStatus.get('bottomOfWindow') > liBaseLine
+      && view.model.get('showing') === false
+    ) {
+      view.model.set({'showing': true});
+    };
 
   },
 
@@ -60,11 +84,17 @@ module.exports = Backbone.View.extend({
       } else if( thisItem.firstChild.localName === 'em' ) {
         thisObject = {
           percentage: thisItem.firstChild.innerText, // whats within the <em>
-          // skillName: thisItem.innerText.replace(thisItem.firstChild.innerText + ' ', ''),
           skillName: thisItem.innerText.substring(3),
           list: thisList.id
         }
+      } else if ( thisItem.children[0].localName === 'em' ) {
+        thisObject = {
+          percentage: thisItem.children[0].innerText, // whats within the <em>
+          skillName: thisItem.innerText.slice(0, -3),
+          list: thisList.id
+        }
       };
+
       if(thisObject){ thisCollection.add(thisObject); }
     }
   }

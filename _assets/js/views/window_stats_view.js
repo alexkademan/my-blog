@@ -23,6 +23,7 @@ module.exports = Backbone.View.extend({
         documentHeight = $(document).height(), //retrieve current document height
         vScrollPosition = $(document).scrollTop(); //retrieve the document scroll TOP position
         // hScrollPosition = $(document).scrollLeft();
+        bottomOfWindow = vScrollPosition + windowHeight; // for scrolling animations.
 
 
     app.windowStatus.set({
@@ -30,7 +31,8 @@ module.exports = Backbone.View.extend({
       windowHeight: windowHeight,
       documentWidth: documentWidth,
       documentHeight: documentHeight,
-      vScrollPosition: vScrollPosition
+      vScrollPosition: vScrollPosition,
+      bottomOfWindow: bottomOfWindow
     });
 
     if (windowWidth > app.windowStatus.get('palmWidth')){

@@ -17,13 +17,14 @@ module.exports = Backbone.View.extend({
   },
 
   changeWidth: function() {
+    if( this.model.get('showing') === true ){
+      var theEm = this.$('em'),
+          widthPercentage = this.model.get('percentage');
+      setTimeout(function(){
+        theEm.attr( "style", "width: " + widthPercentage + "%" );
 
-    var theEm = this.$('em'),
-        widthPercentage = this.model.get('percentage');
-    setTimeout(function(){
-      theEm.attr( "style", "width: " + widthPercentage + "%" );
-
-    }, 10); // this needs to be timed ... zero isn't showing any CSS transition.
+      }, 10); // this needs to be timed ... zero isn't showing any CSS transition.
+    };
   },
 
   zeroOutWidth: function() {
