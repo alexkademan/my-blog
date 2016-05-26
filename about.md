@@ -19,5 +19,3 @@ This is my about page. here I will explain what I know how to do.
 * Illustrator *95*
 * Photoshop *80*
 {: #graphicSkills .skills .graphics}
-
-<!-- \* at gun point. -->

@@ -3,10 +3,13 @@ $small_size: pem(720);
 $large_size: pem(1000);
 $max-width: pem(1100);
 
-$palm_size: new-breakpoint(max-width $small_size 12);
-$medium: new-breakpoint(min-width $small_size 12);
-$large: new-breakpoint(min-width $large_size 12);
+// $palm_size: new-breakpoint(max-width $small_size 12);
+// $medium: new-breakpoint(min-width $small_size 12);
+// $large: new-breakpoint(min-width $large_size 12);
 $col_reading_width: pem(540);
+
+$medium-breakpoint: 'min-width: ' + $small_size;
+$large-breakpoint: 'min-width: ' + $large_size;
 
 $hr: 1px #CCC dotted;
 $hr_darker: 1px #000 solid;

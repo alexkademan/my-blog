@@ -1,0 +1,18 @@
+
+$skill-height: pem(25);
+
+ul.skills li {
+  // padding: pem(21) 0 0.125em;
+}
+ul.skills li::before,
+ul.skills li::after {
+  // height: $skill-height;
+}
+
+ul.skills {
+  @include span-columns(2 of 4);
+}
+
+ul.graphics {
+  margin-right: 0;
+}

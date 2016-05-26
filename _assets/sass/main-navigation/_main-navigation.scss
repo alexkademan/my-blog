@@ -2,9 +2,9 @@
 @import 'main-navigation-universal';
 @import 'main-navigation-hamburger';
 
-@include media($medium) {
+@media($medium-breakpoint) {
   @import 'main-navigation-medium';
 }
-@include media($large) {
+@media($large-breakpoint) {
   @import 'main-navigation-large';
 }

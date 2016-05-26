@@ -2,9 +2,10 @@
 @import 'pages-universal';
 @import 'pages-about';
 
-@include media($medium) {
+@media($medium-breakpoint) {
   @import 'pages-medium';
+  @import 'pages-about-medium';
 }
-@include media($large) {
+@media($large-breakpoint) {
   // @import 'pages-large';
 }

@@ -9,11 +9,7 @@ figure.highlight {
 }
 
 p {
-  display: block;
-  float: left;
-  clear: both;
-  width: 100%;
-  // background-color: #FCF;
+  @include span-columns(12);
 }
 
 ul,

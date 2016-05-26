@@ -1,8 +1,8 @@
 @import 'masthead-universal';
 
-@include media($medium) {
+@media($medium-breakpoint) {
   @import 'masthead-medium';
 }
-@include media($large) {
+@media($large-breakpoint) {
   @import 'masthead-large';
 }
