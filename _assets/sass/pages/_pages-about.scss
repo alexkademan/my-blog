@@ -1,7 +1,9 @@
 ul.skills {
-  padding-bottom: 2em;
+  padding-bottom: 1em;
+  li:first-child {
+    padding-top: 0.5em;
+  }
 }
-
 ul.skills li {
   position: relative;
   display: block;
@@ -26,7 +28,7 @@ ul.skills li i {
   display: block;
   float: right;
   clear: none;
-  color: transparent;
+  color: $color-purple;
   padding-right:0.25em;
   @include  transition(all 0.125s ease-in-out);
 }

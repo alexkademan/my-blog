@@ -13,7 +13,20 @@
       {% for my_page in site.pages %}
         {% if my_page.title %}
         {% capture pageURL %}{{ site.url }}{{ my_page.url }}{% endcapture %}
-        <li><a class="page-link" href="{{ pageURL }}">{{ my_page.title }}</a></li>
+        <!-- <li><a class="page-link" href="{{ pageURL }}">{{ my_page.title }}</a></li> -->
+        {% endif %}
+      {% endfor %}
+
+
+      {% assign sorted_nav = site.pages | sort: 'nav_order' %}
+      {% for page in sorted_nav %}
+        {%
+          if page.hidden_in_main_nav != true
+          and page.name != 'index.html'
+          and page.name != 'feed.xml'
+        %}
+          {% capture pageURL %}{{ site.url }}{{ page.url }}{% endcapture %}
+          <li><a class="page-link" href="{{ pageURL }}">{{ page.title }}{% if page.hidden_in_main_nav == true %}bananas{% endif %}</a></li>
         {% endif %}
       {% endfor %}
 
