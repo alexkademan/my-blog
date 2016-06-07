@@ -5,6 +5,6 @@ permalink: /contact/
 nav_order: 100
 ---
 
-Alex Kademan,
-Milwaukee WI
+Alex Kademan,\\
+Milwaukee WI\\
 alexkademan@gmail.com
