@@ -12,21 +12,21 @@ layout: default
 
   <div class="contact_form">
     <form action="//formspree.io/alexkademan@gmail.com" method="POST">
-
-        <label for="mailName">Your name</label>
+      <span>
+        <label for="mailName">Your Name</label>
         <input type="text" name="name" id="mailName">
-        <br />
+      </span>
 
-        <label for="emailAddress">Your email</label>
+      <span>
+        <label for="emailAddress">Your Email</label>
         <input type="text" name="_replyto" id="emailAddress">
-        <br />
+      </span>
 
-        <label for="emailMessage">Message</label>
-        <textarea id="emailMessage" rows="7" name="message"></textarea>
-        <br />
+      <span>
+        <textarea id="emailMessage" rows="7" name="message">Message</textarea>
+      </span>
 
         <input type="text" name="_gotcha" style="display:none" />
-
         <input type="hidden" name="_next" value="{{ site.url }}/contact-thank-you/" />
 
         <input type="submit" value="Send">

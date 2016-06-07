@@ -1,0 +1,33 @@
+
+div.contact_form {
+
+  & > form > span {
+    display: block;
+    float: left;
+    clear: both;
+    width: 100%;
+    padding-bottom: 0.5em;
+    label {
+      padding-right: pem(5);
+    }
+  }
+
+  @include span-columns(12);
+}
+
+input[type="text"],
+div.contact_form textarea {
+  border: pem(1) $color-blue solid;
+}
+
+div.contact_form textarea {
+  resize: none;
+  width: 100%;
+}
+
+div.contact_form input[type="submit"] {
+  @include button;
+
+  // background: linear-gradient($color-orange, rgb(7, 118, 243)) padding-box rgb(66, 148, 240);
+
+}

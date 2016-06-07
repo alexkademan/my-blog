@@ -10,7 +10,8 @@ figure {
   display: block;
   clear: left;
 }
-p {
+p,
+blockquote {
   @include span-columns(12);
 }
 
