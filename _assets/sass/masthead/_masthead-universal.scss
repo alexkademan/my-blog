@@ -26,7 +26,7 @@ header.site-header {
     span.bg {
       background-image: url('../images/ak_logo_bg.svg');
       opacity: 1;
-      @include transition();
+      @include transition(all 2.0s ease-in-out);
 
       @include animate-linear-rotation(12s);
     }
