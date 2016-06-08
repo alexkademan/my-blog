@@ -10,8 +10,7 @@ figure {
   display: block;
   clear: left;
 }
-p,
-blockquote {
+p {
   @include span-columns(12);
 }
 
@@ -41,10 +40,8 @@ div.layout > span.stripe {
   clear: both;
   width: 100%;
   height: pem(7);
-  background-color: $color-orange;
-  // @include background-image( linear-gradient(to left, $color-orange, lighten($color-pink, 0%)) );
-  @include background-image(linear-gradient(white 0, yellow 50%, transparent 50%));
-
+  background-color: $color-orange; /* For browsers that do not support gradients */
+  @include linear-gradient(to left, $color-orange, lighten($color-pink, 0%));
 }
 
 header.site-header,
