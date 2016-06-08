@@ -31,12 +31,10 @@ nav.site-nav > ul {
   li a {
     font-size: 1em;
     padding: ($main_gutter * 1) 0.25em;
-    // background: rgba(255,255,255, 0.2);
-    @include transition(color 0.25s ease-in-out);
+    transition: color 0.25s ease-in-out;
     .no-touchevents &:hover {
-      // background: transparent;
       color: $color_orange;
-      @include transition(color 0.25s ease-in-out);
+      transition: color 0.25s ease-in-out;
     }
   }
 }

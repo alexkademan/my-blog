@@ -53,10 +53,10 @@ span.mobile_shader {
   z-index: 1;
   width: 100%;
   background-color: transparent;
-  @include transition(background-color 0.4s ease-in-out);
+  transition: background-color 0.4s ease-in-out;
 
   html.main_nav_on & {
     background-color: rgba(0, 0, 0, 0.85);
-    @include transition(background-color 0.4s ease-in-out);
+    transition: background-color 0.4s ease-in-out;
   }
 }
