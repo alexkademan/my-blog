@@ -1,7 +1,8 @@
 
+
 body {
   font-family: 'not-sans-regular', sans-serif;
-  color: darken($color-tan, 70%);
+  color: $color-body-text;
   font-size: 16px;
 }
 p {
@@ -22,6 +23,7 @@ sup {
   font-style: italic;
 }
 a {
+  // color: $color-purple;
   text-decoration: none;
 }
 a.link {
@@ -44,4 +46,34 @@ ul.skills {
 
 footer.site-footer {
   // font-family: arial, helvetica, sans-serif;
+}
+
+p a {
+  // I 'borrowed this from pitchfork.com.
+  // I dunno how they did this, but this is part of how they did it.
+
+  color: $color-body-text;
+  background: linear-gradient(#fff,#fff),linear-gradient(#fff,#fff),linear-gradient( $color-orange, $color-orange );
+  background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)), linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)), linear-gradient( $color-orange, $color-orange );
+  background-position-x: 0px, 100%, 0px;
+  background-position-y: 95%, 95%, 95%;
+  background-size: .05em 1px,.05em 1px,1px 1px;
+  background-repeat-x: no-repeat, no-repeat, repeat;
+  background-repeat-y: no-repeat, no-repeat, no-repeat;
+  background-attachment: initial, initial, initial;
+  background-origin: initial, initial, initial;
+  background-clip: initial, initial, initial;
+  background-color: initial;
+  background-size: .05em 1px,.05em 1px,1px 1px;
+  background-repeat: no-repeat,no-repeat,repeat-x;
+  text-shadow: .03em 0 #fff,-.03em 0 #fff,0 .03em #fff,0 -.03em #fff,.06em 0 #fff,-.06em 0 #fff,.09em 0 #fff,-.09em 0 #fff,.12em 0 #fff,-.12em 0 #fff,.15em 0 #fff,-.15em 0 #fff;
+  background-position: 0 95%,100% 95%,0 95%;
+
+  transition: color 0.125s;
+}
+
+p a:hover {
+    color: #FF3530;
+    background: 0 0;
+    transition: color 0.125s;
 }

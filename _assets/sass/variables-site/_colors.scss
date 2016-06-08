@@ -1,12 +1,4 @@
 
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
-
-
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
 
 
 
@@ -23,3 +15,6 @@ $color-green: rgb(35, 255, 207);
 $color-page-bg:     lighten( $color_tan, 10% );
 // $color-page-footer: lighten( $color-green, 0% );
 // $color-page-footer: lighten( $color_tan, 7% );
+
+
+$color-body-text: darken($color-tan, 70%);

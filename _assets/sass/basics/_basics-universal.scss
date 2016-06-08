@@ -18,6 +18,7 @@ figure {
   display: block;
   clear: left;
 }
+
 p {
   @include span-columns(12);
 }
