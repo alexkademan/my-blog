@@ -1,6 +1,5 @@
 body {
   background-color: $color-page-bg;
-  // @include linear-gradient(to top, #FFF, lighten($color-tan, 3%));
 }
 ::selection {
   background: $color-orange; /* WebKit/Blink Browsers */

@@ -9,6 +9,7 @@ var MainNavView = require('./views/main_nav_view');
 
 var AboutPageStats = require('./views/about_stats_view');
 var Copyright = require('./views/copyright_view');
+var AboutPageStats = require('./views/about_stats_view');
 
 var domReady = require('domready');
 
@@ -24,7 +25,7 @@ module.exports = {
     // this ensures the document has a body, etc.
     domReady(function () {
 
-      // app.backgroundStatic = new Background();
+      app.backgroundStatic = new Background();
       app.copyright = new Copyright();
 
       // background stuff:
