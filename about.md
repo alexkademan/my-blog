@@ -8,7 +8,7 @@ nav_order: 10
 
 I am a web designer/developer based in Milwaukee Wisconsin with almost 10 years of experience in print and web design.
 
-I currently work at [Modus Design, Inc.][modus] where I handle all things web. I've single-handedly built and maintain websites of varying size, from small blogs, to medium sized e-commerce shops.
+I currently work at [Modus Design, Inc.][modus] where I handle all things web. I single-handedly build and maintain websites of varying size, from small blogs, to medium sized e-commerce shops.
 
 * ## Web Dev Expertise:
 * *95* CSS / SCSS
