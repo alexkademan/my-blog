@@ -1,0 +1,51 @@
+---
+layout: default
+---
+  <header class="post-header">
+    <h3 class="post-title">{{ content }}</h3>
+  </header>
+
+
+  {% for category in site.categories %}
+    {% if category.first == 'websites' %}
+
+    <article class="portfolio">
+      <header>
+        <h3>
+            WEBSITES<br />
+        </h3>
+
+        </h6><i>
+          Built from scratch.<br />
+          Crafted with care.<br />
+          Maintained with diligence.
+        </i></h6>
+
+      </header>
+
+      <ul class="portfolio">
+        {% for posts in category %}
+          {% for post in posts %}
+            {% if post.siteURL %}
+            <li>
+                <h2>{{ post.title }}</h2>
+              <span class="post-content">
+                {{ post.content }}
+              </span>
+
+              <span class="site">
+                <a href="{{ post.siteURL }}" class="site" target="_blank">
+                  Visit {{ post.title }} <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                </a>
+              </span>
+
+
+            </li>
+            {% endif %}
+          {% endfor %}
+        {% endfor %}
+      </ul>
+    </article>
+
+    {% endif %}
+  {% endfor %}

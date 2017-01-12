@@ -1,27 +1,17 @@
 ---
 layout: post
-title:  "When I Accidentally Went 'Full-Stack'"
+title:  How I Accidentally Went "Full-Stack"
 date:   2016-02-13 15:53:16 -0600
-categories: jekyll update
+categories: blog
 ---
-The working title of this post was: "How to Burn Out!"
+When I began doing web design, Photoshop was still a must-have utility for creating HTML tables. I've witnessed the horrors of IE 6, and concocted my fair share of Actionscript monstrosities. All those early projects are now nothing more than learning experiences that just happened to be good enough for the time in which they were written.
 
-I've been doing web design since a time when Photoshop was a must-have utility for creating HTML tables. I've witnessed the horrors of IE 6, and concocted all kinds of spaghetti driven Flash monstrosities that I'd rather not talk about.
+The things I build nowadays days all involve front end frameworks and back end CMSs of varying size and complexity. I largely prefer to put them together from nothing. I've doctored broken MySQL data tables that took days to diagnose. I've seen problems with pages not loading properly in other countries that couldn't be replicated here. And I've stayed on top of it all so far.
 
-All of that is to say: I've always known that my tolerance for pain in the name of my craft is pretty high.
+I did all of it by myself. No team.
 
-Actionscript was the first language I learned. Of course I never mastered it. At all. It was a weird way to jump into programming. I know that I'm not the only person out there who was drawn to building websites through Flash, but I know that I could have found a more traditional point of entry.
+The trouble is that I'm less proud to admit that last fact all the time. I went "Full Stack" not somewhat involuntarily. I just shrugged off the days of being overwhelmed, and figured that it would eventually just work out fine. Over time that meant being busier and busier as I sat at the helm of a growing list of websites, each with their own laundry list of responsibilities.
 
-Then came WordPress. Today I am no fan of WordPress. You won't catch me building things in WP for fun, but I admit that it taught me a great deal about PHP. Fortunately it wasn't my only teacher. I've spent more time with other monolithic PHP applications, and WordPress still puzzles me in terms of some of it's design decisions under the hood.
+I AM proud of the varied accomplishments throughout my career to date, but here in 2016, I just can't see the advantage to working without a team.
 
-What came least naturally was Javascript. Despite knowing a few things about Actionscript, Javascript eluded me for a long while. When I finally mastered most of the basics, I was absolutely blindsided by the pace at which Javascript is moving the web forward. Thrilled, but taken aback.
-
-These days I have a fairly good grasp of all the parts of what makes a website. I've managed numerous interrelated domains from the same VPS. I've written thousands of lines of CSS both with and without pre-processors. I've installed and re-configured SSL certificates, brought websites up to PCI compliance (with MUCH help) and done my share of sifting through error logs for days on end.
-
-The thing is, now that I look back on how far I've come, I would never refer to myself as "Full Stack". I just wont.
-
-The disciplines that I have forced myself to learn are varied. What keeps a server administrator up at night shouldn't have to be the concerns of the person who is overseeing the marketing needs, or the look and feel of the site that sits within that server.
-
-I am sure there are superheroes out there who can stay on top of a website's back-end needs while concurrently implementing a fool-proof UX strategy. I only know that I have tried, and it has taught me a lot about exhaustion.
-
-[jekyll-docs]: http://jekyllrb.com/docs/home
+"Full Stack" is a nebulous term to begin with, but I've found it to be unhealthy.

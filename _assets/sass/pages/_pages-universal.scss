@@ -1,1 +1,29 @@
 // $skill-height: pem(20);
+
+ul.portfolio li,
+span.site  {
+  display: block;
+  float: left;
+  clear: both;
+  width: 100%;
+}
+
+span.site  {
+  margin-top: 0.25em;
+}
+span.site a {
+  background-color: darken($color-green, 15%);
+  color: $color-page-bg;
+  font-size: smaller;
+  transition: background 0.25s ease;
+  padding: 0.25em 0.5em;
+  margin-top: 0.25em;
+  border-radius: 0.25em;
+}
+.no-touchevents span.site a:hover  {
+  background-color: $color-orange;
+}
+
+ul.portfolio li:not(:last-child) {
+  padding-bottom: 2em;
+}

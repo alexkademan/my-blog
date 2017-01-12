@@ -13,16 +13,15 @@ I currently work at [Modus Design, Inc.][modus] where I handle all things web. I
 * ## Web Dev Expertise:
 * *95* CSS / SCSS
 * *95* HTML
-* *80* PHP
-* *75* Javascript*
+* *90* Javascript
+* *75* PHP
 {: #webSkills .skills .web}
 
 * ## Graphics Know-how:
-* *95* InDesign
+* *90* InDesign
 * *95* Illustrator
 * *80* Photoshop
 {: #graphicSkills .skills .graphics}
 
-\* Not my strongest skill, but somehow my favorite.
 
 [modus]: http://designbymodus.com/

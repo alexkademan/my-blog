@@ -2,15 +2,20 @@
 layout: default
 ---
 <div class="home">
-
   <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.url }}">{{ post.title }}</a>
-        </h2>
-        <span class="post-meta serif_scitalic">{{ post.date | date: "%b %-d, %Y" }}</span>
-      </li>
+    {% for category in site.categories %}
+      {% if category.first == 'blog' %}
+        {% for posts in category %}
+          {% for post in posts %}
+          <li>
+            <h2>
+              <a class="post-link" href="{{ post.url | prepend: site.url }}">{{ post.title }}</a>
+            </h2>
+            <span class="post-meta serif_scitalic">{{ post.date | date: "%b %-d, %Y" }}</span>
+          </li>
+          {% endfor %}
+        {% endfor %}
+      {% endif %}
     {% endfor %}
   </ul>
 
