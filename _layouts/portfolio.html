@@ -28,7 +28,14 @@ layout: default
           {% for post in posts %}
             {% if post.siteURL %}
             <li>
-                <h2>{{ post.title }}</h2>
+              <header>
+                <a href="{{ post.siteURL }}" class="site">
+
+                  <img src="{{ site.url }}/images/{{ post.thumbnail }}" />
+                  <h2>{{ post.title }}</h2>
+
+                </a>
+              </header>
               <span class="post-content">
                 {{ post.content }}
               </span>

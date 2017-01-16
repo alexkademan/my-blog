@@ -15,8 +15,8 @@ description: > # this means to ignore newlines until "baseurl:"
 
 baseurl: "" # the subpath of your site, e.g. /blog
 
-url: "http://192.168.1.110/~Alex/jekyll/alexkademan.github.io" # the name of your domain
-# url: "http://alexkademan.site" # the name of your domain
+# url: "http://192.168.1.110/~Alex/jekyll/alexkademan.github.io" # the name of your domain
+url: "http://alexkademan.site" # the name of your domain
 
 # twitter_username: AlexKademan
 github_username:  alexkademan

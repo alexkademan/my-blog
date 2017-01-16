@@ -5,3 +5,48 @@ article.portfolio header {
   width: 100%;
   padding: 0 0 2em;
 }
+
+
+ul.portfolio li:not(:last-child) {
+  padding-bottom: 3em;
+}
+
+
+ul.portfolio a img {
+  display: block;
+  float: left;
+  clear: both;
+  // width: 80%;
+  width: 100%;
+  max-width: 550px;
+
+  border: 2px $color-purple solid;
+  border-radius: 0.25em;
+
+  transition: all 0.25s ease;
+}
+
+ul.portfolio header {
+  padding: 0;
+}
+ul.portfolio header h2 {
+  display: block;
+  float: left;
+  clear: both;
+  width: 100%;
+  padding: 0.25em 0;
+}
+.no-touchevents ul.portfolio a h2,
+ul.portfolio a img {
+  transition: all 0.2s ease;
+}
+
+
+ul.portfolio a:hover img {
+  border-color: $color-orange;
+}
+
+.no-touchevents ul.portfolio a:hover h2 {
+  text-decoration: underline;
+  color: $color-orange
+}
